@@ -4,16 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Color+Emoji&family=Noto+Emoji:wght@300..700&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Dancing+Script:wght@400..700&family=Jersey+10&family=Jersey+25&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Color+Emoji&family=Noto+Emoji:wght@300..700&family=Press+Start+2P&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Dancing+Script:wght@400..700&family=Jersey+10&family=Jersey+25&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Color+Emoji&family=Noto+Emoji:wght@300..700&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
@@ -22,46 +17,64 @@
     <title>World Clock</title>
   </head>
   <body>
-    å
     <div class="container">
       <h1>WORLD CLOCK</h1>
 
       <select id="city">
         <option value="">Select a city...</option>
-        <option value="Europe/London">London</option>
-        <option value="Asia/Tokyo">Tokyo</option>
-        <option value="Pacific/Auckland">Auckland</option>
-        <option value="America/Sao_Paulo">Sao Paulo</option>
-        <option value="Asia/Kolkata">New Delih</option>
-        <option value="Africa/Johannesburg">Johannesburg</option>
+        <option value="current">Current location</option>
+        <option value="Europe/London">London - United Kingdom</option>
+        <option value="Europe/Berlin">Berlin - Germany</option>
+        <option value="Europe/Helsinki">Helsinki - Finland</option>
+        <option value="Europe/Moscow">Moscow - Russia</option>
+        <option value="Asia/Tokyo">Tokyo - Japan</option>
+        <option value="Asia/Beijing">Beijing - China</option>
+        <option value="Asia/Jakarta">Jakarta - Indonesia</option>
+        <option value="Asia/Kolkata">Kolkata - India</option>
+        <option value="Australia/Brisbane">Brisbane - Australia</option>
+        <option value="Australia/Perth">Perth - Australia</option>
+        <option value="Pacific/Auckland">Auckland - New Zealand</option>
+        <option value="Pacific/Honolulu">Honolulu - Hawaii</option>
+        <option value="America/Chicago">Chicago - United States</option>
+        <option value="America/Denver">Denver - United States</option>
+        <option value="America/Los_Angeles ">
+          Los Angeles - United States
+        </option>
+        <option value="America/Anchorage">Anchorage - United States</option>
+        <option value="America/Sao_Paulo">Sao Paulo - Brasil</option>
+        <option value="America/Buenos_Aires">Buenos Aires - Argentina</option>
+        <option value="Africa/Johannesburg">Johannesburg - South Africa</option>
+        <option value="Africa/Nairobi">Nairobi - Kenya</option>
+        <option value="Africa/Algeria">Algeria - North Africa</option>
       </select>
       <div id="cities">
+        <div id="current"></div>
         <div class="city" id="new-york">
           <div>
             <h2>New York</h2>
-            <div class="date">April 15th 2024</div>
+            <div class="date"></div>
           </div>
-          <div class="time">4:44:44 <small> AM </small></div>
+          <div class="time"></div>
         </div>
         <div class="city" id="sydney">
           <div>
             <h2>Sydney</h2>
-            <div class="date">April 15th 2024</div>
+            <div class="date"></div>
           </div>
-          <div class="time">4:44:44 <small> AM </small></div>
+          <div class="time"></div>
         </div>
         <div class="city" id="prague">
           <div>
             <h2>Prague</h2>
-            <div class="date">April 15th 2024</div>
+            <div class="date"></div>
           </div>
-          <div class="time">4:44:44 <small> AM </small></div>
+          <div class="time"></div>
         </div>
       </div>
+      <a class="reset" href="/">reset</a>
     </div>
-
     <footer>
-      This project was coded by
+      Coded with <span class="emoji">💚</span> by
       <strong>Anet Jakesova</strong>
       and is
       <a href="https://github.com/Afishnet?tab=repositories" target="_blank">

@@ -1,13 +1,35 @@
 body {
   font-family: "Roboto Mono", monospace;
   color: white;
+  background: linear-gradient(
+    -45deg,
+
+    #648c28,
+    rgba(255, 255, 255, 0.835),
+    rgb(147, 176, 221),
+    rgb(180, 201, 156)
+  );
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   color: rgb(0, 0, 0);
   font-weight: bold;
+  font-family: "Orbitron", sans-serif;
 }
 
 h2 {
@@ -51,19 +73,35 @@ select {
 }
 
 .time {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bolder;
   color: rgb(133, 162, 66);
-  font-family: "Press Start 2P", system-ui;
-  margin-top: 20px;
+  font-family: "Orbitron", sans-serif;
+  margin-top: 10px;
 }
 
 footer {
   text-align: center;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
-  margin: 20px 170px 20px 170px;
+  margin: 20px 210px 20px 210px;
+  font-weight: 400;
 }
 a {
   color: rgb(133, 162, 66);
+}
+.emoji {
+  font-family: "Noto Color Emoji", sans-serif;
+}
+.reset {
+  display: block;
+  background-color: rgb(100, 140, 40, 0.6);
+  margin: 20px 200px 0px 200px;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
