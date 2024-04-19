@@ -18,7 +18,7 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
- 
+
     <title>World Clock</title>
   </head>
   <body>
@@ -26,33 +26,37 @@
     <div class="container">
       <h1>WORLD CLOCK</h1>
 
-      <select>
+      <select id="city">
         <option value="">Select a city...</option>
-        <option value="">Prague</option>
-        <option value="">Tokyo</option>
-        <option value="">Auckland</option>
+        <option value="Europe/London">London</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Pacific/Auckland">Auckland</option>
+        <option value="America/Sao_Paulo">Sao Paulo</option>
+        <option value="Asia/Kolkata">New Delih</option>
+        <option value="Africa/Johannesburg">Johannesburg</option>
       </select>
-
-      <div class="city" id="new-york">
-        <div>
-          <h2>New York</h2>
-          <div class="date">April 15th 2024</div>
+      <div id="cities">
+        <div class="city" id="new-york">
+          <div>
+            <h2>New York</h2>
+            <div class="date">April 15th 2024</div>
+          </div>
+          <div class="time">4:44:44 <small> AM </small></div>
         </div>
-        <div class="time">4:44:44 <small> AM </small></div>
-      </div>
-      <div class="city" id="sydney">
-        <div>
-          <h2>Sydney</h2>
-          <div class="date">April 15th 2024</div>
+        <div class="city" id="sydney">
+          <div>
+            <h2>Sydney</h2>
+            <div class="date">April 15th 2024</div>
+          </div>
+          <div class="time">4:44:44 <small> AM </small></div>
         </div>
-        <div class="time">4:44:44 <small> AM </small></div>
-      </div>
-      <div class="city" id="prague">
-        <div>
-          <h2>Prague</h2>
-          <div class="date">April 15th 2024</div>
+        <div class="city" id="prague">
+          <div>
+            <h2>Prague</h2>
+            <div class="date">April 15th 2024</div>
+          </div>
+          <div class="time">4:44:44 <small> AM </small></div>
         </div>
-        <div class="time">4:44:44 <small> AM </small></div>
       </div>
     </div>
 
