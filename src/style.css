@@ -95,13 +95,13 @@ a {
 }
 .reset {
   display: block;
-  background-color: rgb(100, 140, 40, 0.6);
-  margin: 20px 200px 0px 200px;
+  background-color: rgb(255, 255, 255, 0.1);
+  margin: 30px 200px 0px 200px;
   padding: 5px 5px 5px 5px;
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
-  color: white;
-  font-size: 18px;
+  color: rgb(5, 4, 4);
+  font-size: 15px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
